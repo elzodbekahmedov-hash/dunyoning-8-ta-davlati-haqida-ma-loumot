@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countries</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countries</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
-    <header class="main_header">
-        <div class="container">
-        <h2 class="main_title">
-            Where in the world?
-        </h2>
-        <div class="theme_toggler">
-            <span class="theme_icon fa fa-moon"></span>
-            <span class="theme_text">Dark Mode</span>
-        </div>
-        </div>
-    </header>
 
-    <main class="main_box">
-        <div class="container">
+<header class="main_header">
+  <div class="container">
+    <h2 class="main_title">Where in the world?</h2>
 
-            <div class="filter_box">
-                <label for="finder" class="find_lab">
-                    <span class="fa fa-search"></span>
-                    <input type="text" placeholder="Search for a country…" id="finder">
-                </label>
+    <div class="theme_toggler">
+      <span class="theme_icon fa fa-moon"></span>
+      <span class="theme_text">Dark Mode</span>
+    </div>
+  </div>
+</header>
 
-                <select id="filter">
-                    <option value="no">Filter by Region</option>
-                    <option value="africa">Africa</option>
-                    <option value="americas">America</option>
-                    <option value="asia">Asia</option>
-                    <option value="europe">Europe</option>
-                    <option value="oceania">Oceania</option>
-                </select>
+<main class="main_box">
+  <div class="container">
 
-            </div>
+    <div class="filter_box">
+      <label for="finder" class="find_lab">
+        <span class="fa fa-search"></span>
+        <input type="text" placeholder="Search for a country…" id="finder">
+      </label>
 
-            <div class="country_box" id="cardsBox">
-                
-            </div>
+      <select id="filter">
+        <option value="no">Filter by Region</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">Americas</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </div>
 
-        </div>
-    </main>
+    <div class="country_box" id="cardsBox"></div>
 
-    <script src="/js/script.js" type="module"></script>
+  </div>
+</main>
+
+<script type="module" src="./js/script.js"></script>
 </body>
 </html>
